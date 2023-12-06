@@ -43,6 +43,5 @@ export function possibleGames(input: string[], targetCubes: CubeCount): number {
       possibleGameIds.push(gameId);
     }
   });
-  console.log(possibleGameIds);
   return possibleGameIds.reduce((sum, currentId) => sum + currentId, 0);
 }
