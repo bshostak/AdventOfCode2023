@@ -6,7 +6,7 @@ test.describe('Day 2 - Advent of Code 2023', () => {
   test('Part 1', async () => {
     const targetCubes: CubeCount = { red: 12, green: 13, blue: 14 };
     const result = possibleGames(getInput('../data/day2.txt'), targetCubes);
-    console.log(result);
+    expect(result).toBe(2512)
   });
 
   test('Part 2', async () => {
