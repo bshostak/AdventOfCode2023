@@ -1,6 +1,6 @@
-export function getAnswer(input: string): number {
+export function getAnswer(input: string[]): number {
   // Split the input string into lines
-  const lines = input.split('\n');
+  const lines = input;
 
   // Initialize a variable to store the total sum
   let sum = 0;

@@ -1,11 +1,11 @@
-export function getAnswerTwo(input: string): number {
+export function getAnswerTwo(input: string[]): number {
   // Define the word-digit mapping
   const wordDigitMapping = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'].map(
     (word, index) => <const>[word, index + 1]
   );
 
   // Split the input string into lines
-  const lines = input.split('\n');
+  const lines = input;
 
   // Map over each line
   const processedLines = lines.map((line) => {
